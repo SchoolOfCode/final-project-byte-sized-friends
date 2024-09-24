@@ -1,9 +1,9 @@
-name: Lint and Auto Merge
+name: Lint
 
 on:
-  push:
+  pull_request:
     branches:
-      - 'feature/*' 
+      - main
 
 jobs:
   run-linters:
@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 20
 
+      # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
         run: npm ci
 
@@ -27,24 +28,3 @@ jobs:
         with:
           eslint: true
           prettier: true
-
-  auto-merge:
-    needs: run-linters
-    runs-on: ubuntu-latest
-    if: success() 
-    steps:
-      - name: Checkout PR
-        uses: actions/checkout@v4
-
-      - name: Auto-merge feature branch into main
-        uses: pascalgn/automerge-action@v0.15.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          mergeMethod: squash   
-          branch: main           
-
-      - name: Delete feature branch after merge
-        run: |
-          git branch -d ${{ github.ref_name }}  # Delete local branch
-          git push origin --delete ${{ github.ref_name }}  # Delete remote branch
