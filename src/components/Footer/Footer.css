@@ -1,15 +1,20 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #d3d3d3;
-    border-top: 1px solid #ccc;
-  }
-  
-  .footer p {
-    margin: 0;
-    color: black;
-    font-size: 14px;
-  }
-  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.footer-icon {
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  color: teal;
+}
