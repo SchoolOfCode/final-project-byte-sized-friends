@@ -1,5 +1,4 @@
 import "./globals.css";
-import Home from "./app/page.js";
 
 export const metadata = {
   title: "METIS",
@@ -8,8 +7,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-    <Home />
-    </>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   );
 }
