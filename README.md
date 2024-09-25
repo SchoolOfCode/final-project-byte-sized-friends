@@ -43,3 +43,4 @@ Irena says:
 > I connected with so many other people I wouldn't have otherwise and learnt loads.
 
 Miro - https://miro.com/app/board/uXjVLbnZvJU=/?share_link_id=673975896156
+Database Research- https://docs.google.com/document/d/1qi8z4EeociJwwjTq33aOoPCNK75-V2cVtoORh2tH620/edit?usp=sharing
