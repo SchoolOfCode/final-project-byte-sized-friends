@@ -28,6 +28,6 @@ jobs:
         with:
           eslint: false
           prettier: true
-      
+
       - name: Run ESLint
         run: npx eslint .
