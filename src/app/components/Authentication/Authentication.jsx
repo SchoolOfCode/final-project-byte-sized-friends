@@ -3,6 +3,7 @@ import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useRouter } from "next/navigation";
 import supabase from "../../../helpers/supabaseClient";
+import "./Authentication.css";
 
 export default function Authentication() {
   const [session, setSession] = useState(null);

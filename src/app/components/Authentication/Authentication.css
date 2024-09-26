@@ -1,0 +1,63 @@
+Authentication.css
+.auth-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+  }
+  
+  .auth-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #084887;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input,
+  .auth-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .auth-form button {
+    background-color: #084887;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-form button:hover {
+    background-color: #4f757d;
+  }
+  
+  @media (max-width: 768px) {
+    .auth-container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .auth-title {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+  
+    .auth-form input,
+    .auth-form button {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }

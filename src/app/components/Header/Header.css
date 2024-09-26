@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #084887;
-  padding: 20px 40px;
+  padding: 10px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
@@ -17,10 +17,10 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 15px 20px;
+    padding: 5px px;
   }
 
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
